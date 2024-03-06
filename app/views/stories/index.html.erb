@@ -1,0 +1,29 @@
+<!-- app/views/stories/index.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Boy Who Cried Wolf</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .story-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Boy Who Cried Wolf</h1>
+
+  <div class="story-content">
+    <%= @story.html_safe %>
+  </div>
+</body>
+</html>
